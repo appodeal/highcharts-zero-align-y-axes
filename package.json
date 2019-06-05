@@ -1,25 +1,34 @@
 {
-  "name": "highcharts-zero-align-y-axes",
-  "version": "1.0.8",
-  "description": "Highcharts extension that zero-aligns the scales of primary and secondary y-axes.",
-  "main": "tick_positioner.js",
+  "name": "zero-tick-positioner",
+  "version": "0.0.1",
+  "description": "A plugin for Highcharts that aligns y-axes by zero.",
+  "main": "./src/index.ts",
   "scripts": {
+    "build": "rm -rf ./dist && node_modules/.bin/tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chriskmnds/highcharts-zero-align-y-axes.git"
+    "url": "https://github.com/appodeal/zero-tick-positioner"
   },
   "keywords": [
     "highcharts",
     "tick-positioner",
+    "zero",
     "plugin",
     "alignment"
   ],
-  "author": "chriskmnds",
+  "author": {
+    "name": "Appodeal, Inc.",
+    "email": "hi@appodeal.com",
+    "url": "http://appodeal.com"
+  },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chriskmnds/highcharts-zero-align-y-axes/issues"
+    "url": "https://github.com/appodeal/zero-tick-positioner/issues"
   },
-  "homepage": "https://github.com/chriskmnds/highcharts-zero-align-y-axes#readme"
+  "devDependencies": {
+    "highcharts": "^7.1.1",
+    "typescript": "^3.5.1"
+  }
 }
