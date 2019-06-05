@@ -17,11 +17,9 @@ export class ZeroTickPositioner {
             multiple = yAxes.length > 1;
         this.alignZero = true;
         for (let axis of yAxes) {
-            if (axis.coll === 'yAxis') {
-                axis.update({
-                    tickPositioner: this.createPositioner(multiple)
-                }, false);
-            }
+            axis.update({
+                tickPositioner: this.createPositioner(multiple)
+            }, false);
         }
         chart.redraw(this.animationEnabled);
     };
