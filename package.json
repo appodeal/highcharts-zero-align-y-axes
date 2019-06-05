@@ -9,7 +9,7 @@
     "postbuild": "node tools/dist-files.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prerelease": "npm run build",
-    "release": "npm login && npm publish ./dist --tag :$(node tools/package-info.js version) --access public"
+    "release": "npm login && npm publish ./dist --tag @:$(node tools/package-info.js version) --access public"
   },
   "repository": {
     "type": "git",
