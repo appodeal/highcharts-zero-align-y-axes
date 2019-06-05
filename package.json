@@ -27,6 +27,18 @@
     "email": "hi@appodeal.com",
     "url": "http://appodeal.com"
   },
+  "contributors": [
+    {
+      "name": "Aleksey Skakun",
+      "email": "alex.skakun@me.com",
+      "url": "https://github.com/alex-skakun"
+    },
+    {
+      "name": "Evgeniy Shurmin",
+      "email": "eshurmin@gmail.com",
+      "url": "https://github.com/jpascal"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/appodeal/zero-tick-positioner/issues"
