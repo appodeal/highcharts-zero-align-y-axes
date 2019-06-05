@@ -10,7 +10,7 @@ let files = fs.readdirSync(process.cwd()),
     ignored = fs.readFileSync(path.resolve(process.cwd(), '.npmignore')).toString().split('\n');
 
 for (let fileName of files) {
-    if (!ignored.includes(fileName)) {
+    if (!ignored.includes(fileName) && fileName !== 'package.json') {
         fs.copyFileSync(fileName, `./dist/${fileName}`);
     }
 }
