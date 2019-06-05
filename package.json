@@ -4,8 +4,12 @@
   "description": "A plugin for Highcharts that aligns y-axes by zero.",
   "main": "./src/index.ts",
   "scripts": {
-    "build": "rm -rf ./dist && node_modules/.bin/tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prebuild": "rm -rf ./dist",
+    "build": "node_modules/.bin/tsc",
+    "postbuild": "node tools/dist-files.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prerelease": "npm run build",
+    "release": "npm login && npm publish ./dist --tag :$(node tools/package-info.js version) --access public"
   },
   "repository": {
     "type": "git",
