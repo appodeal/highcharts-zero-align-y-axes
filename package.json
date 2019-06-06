@@ -1,6 +1,6 @@
 {
   "name": "zero-tick-positioner",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A plugin for Highcharts that aligns y-axes by zero.",
   "main": "./src/index.ts",
   "scripts": {
